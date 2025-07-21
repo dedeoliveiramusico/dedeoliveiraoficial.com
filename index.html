@@ -1,89 +1,117 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dedé Oliveira - Músico Autêntico</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-        section {
-            padding: 2rem;
-            max-width: 800px;
-            margin: auto;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        label {
-            margin-top: 1rem;
-            font-weight: bold;
-        }
-        input, textarea {
-            padding: 0.8rem;
-            margin-top: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            margin-top: 1.5rem;
-            padding: 1rem;
-            border: none;
-            background-color: #27ae60;
-            color: white;
-            font-size: 1rem;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #219150;
-        }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background-color: #2c3e50;
-            color: white;
-            margin-top: 3rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dedé Oliveira - Músico Autêntico</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #1a1a1a;
+      color: #fff;
+    }
+    header {
+      background: #c62828;
+      padding: 30px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      font-style: italic;
+      margin: 10px 0 0;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #ff5252;
+    }
+    .social a {
+      margin-right: 15px;
+      color: #ff5252;
+      text-decoration: none;
+    }
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+      margin-top: 10px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+    }
+    form button {
+      background: #ff5252;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #e53935;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Dedé Oliveira</h1>
-        <p>Músico Autêntico | Criador de Histórias Reais</p>
-    </header>
-    <section>
-        <h2>Fale Comigo</h2>
-        <form action="#" method="POST">
-            <label for="name">Nome</label>
-            <input type="text" id="name" name="name" required />
 
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required />
+  <header>
+    <h1>Dedé Oliveira</h1>
+    <p>Músico Autêntico | Criador de Histórias Reais</p>
+  </header>
 
-            <label for="subject">Assunto</label>
-            <input type="text" id="subject" name="subject" required />
+  <section>
+    <h2>🎙️ Sobre Mim</h2>
+    <p>Dedé Oliveira é um músico romântico que emociona com músicas autorais e histórias reais. Com mais de 500 mil seguidores, ele conquista corações com seu estilo único, inspirado em Frankito Lopes.</p>
+  </section>
 
-            <label for="message">Mensagem</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+  <section>
+    <h2>🎵 Músicas e Vídeos</h2>
+    <p>Assista abaixo um dos clipes recentes:</p>
+    <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID" allowfullscreen></iframe>
+    <p>Substitua o vídeo acima com o link de um dos seus clipes do YouTube.</p>
+  </section>
 
-            <button type="submit">Enviar Mensagem</button>
-        </form>
-    </section>
-    <footer>
-        <p>&copy; 2025 Dedé Oliveira. Todos os direitos reservados.</p>
-    </footer>
+  <section>
+    <h2>📲 Redes Sociais</h2>
+    <div class="social">
+      <a href="https://facebook.com/SEU_USUARIO" target="_blank">Facebook</a>
+      <a href="https://youtube.com/SEU_CANAL" target="_blank">YouTube</a>
+      <a href="https://instagram.com/SEU_USUARIO" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>📩 Fale Comigo</h2>
+    <form action="https://formspree.io/f/seu-formulario" method="POST">
+      <input type="text" name="name" placeholder="Nome" required>
+      <input type="email" name="email" placeholder="E-mail" required>
+      <input type="text" name="subject" placeholder="Assunto">
+      <textarea name="message" rows="6" placeholder="Mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Dedé Oliveira - Todos os direitos reservados.
+  </footer>
+
 </body>
 </html>
