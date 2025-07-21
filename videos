@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Vídeos de Dedé Oliveira</title>
+</head>
+<body>
+  <h1>Vídeos do canal</h1>
+
+  <iframe width="360" height="215" src="https://www.youtube.com/embed/ID_DO_VIDEO_1" frameborder="0" allowfullscreen></iframe>
+  <iframe width="360" height="215" src="https://www.youtube.com/embed/ID_DO_VIDEO_2" frameborder="0" allowfullscreen></iframe>
+  <iframe width="360" height="215" src="https://www.youtube.com/embed/ID_DO_VIDEO_3" frameborder="0" allowfullscreen></iframe>
+
+  <p><a href="index.html">Voltar para a página inicial</a></p>
+</body>
+</html>
