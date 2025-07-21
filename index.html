@@ -1,75 +1,58 @@
-<!DOCTYPE html><html lang="pt-BR">
+
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dédé Oliveira | O Último Romântico</title>
+  <title>Dedé Oliveira - O Último Romântico</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0a0a0a;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
       color: white;
-      text-align: center;
-    }
-    .hero {
-      background-image: url('https://chat.openai.com/cdn-cgi/imagedelivery/xxxxxxxxxxxxxxxxxxxxx'); /* Substitua pela URL final da imagem */
+      background-image: url('https://raw.githubusercontent.com/dedeoliveiramusico/dedeoliveiraoficial.com/main/fundo.jpg');
       background-size: cover;
       background-position: center;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-shadow: 1px 1px 3px #000;
+      background-attachment: fixed;
+      text-align: center;
     }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.75);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
     h1 {
+      color: #ff4d4d;
       font-size: 3em;
-      margin: 20px 0 10px;
-      background: linear-gradient(90deg, #ffcc00, #ff00cc);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-transform: uppercase;
-      letter-spacing: 2px;
+      margin-bottom: 10px;
     }
+
     p {
       font-size: 1.2em;
       margin-bottom: 30px;
     }
-    .buttons a {
-      text-decoration: none;
-      background: #ff007f;
-      color: white;
-      padding: 12px 20px;
-      margin: 10px;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: background 0.3s;
-      display: inline-block;
-    }
-    .buttons a:hover {
-      background: #cc0066;
-    }
-    footer {
-      background-color: #111;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #bbb;
+
+    iframe {
+      width: 100%;
+      max-width: 720px;
+      height: 405px;
+      border: none;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="hero">
-    <h1>Dédé Oliveira</h1>
-    <p>O Último Romântico</p>
-    <div class="buttons">
-      <a href="https://youtube.com/@dedepoplovedeol20" target="_blank">YouTube</a>
-      <a href="https://www.facebook.com/share/18N3R1AFnn/" target="_blank">Facebook</a>
-      <a href="https://instagram.com" target="_blank">Instagram</a>
-      <a href="https://wa.me/seunumero" target="_blank">WhatsApp</a>
-    </div>
+  <div class="overlay">
+    <h1>Dedé Oliveira</h1>
+    <p>O Último Romântico — Assista ao clipe abaixo</p>
+    <iframe 
+      src="https://www.youtube.com/embed/fc-6jUX9AYo?si=XpJmKXu1xvzJT-lN" 
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
   </div>
-  <footer>
-    &copy; 2025 Dédé Oliveira. Todos os direitos reservados.
-  </footer>
 </body>
 </html>
