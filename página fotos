@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Fotos de Dedé Oliveira</title>
+</head>
+<body>
+  <h1>Galeria de Fotos</h1>
+
+  <img src="imagens/foto1.jpg" alt="Foto 1" width="300">
+  <img src="imagens/foto2.jpg" alt="Foto 2" width="300">
+  <img src="imagens/foto3.jpg" alt="Foto 3" width="300">
+
+  <p><a href="index.html">Voltar para a página inicial</a></p>
+</body>
+</html>
