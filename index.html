@@ -3,121 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dedé Oliveira - O Último Romântico</title>
+  <title>Dedé Oliveira – Conexão com os Fãs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #111;
-      color: white;
+      font-family: 'Roboto', sans-serif;
+      background-color: #1a1a1a;
+      color: #fff;
     }
 
-    header {
-      background: url('https://i.imgur.com/Y8eYUdj.jpg') no-repeat center;
+    .hero {
+      background-image: url('SUA-IMAGEM-ROMANTICA.jpg'); /* Coloque aqui a URL da imagem gerada no Leonardo */
       background-size: cover;
-      height: 400px;
+      background-position: center;
+      height: 100vh;
+      position: relative;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-shadow: 2px 2px 5px #000;
+      text-align: center;
     }
 
-    h1 {
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      top: 0; bottom: 0; left: 0; right: 0;
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+    }
+
+    .hero-text h1 {
+      font-family: 'Great Vibes', cursive;
       font-size: 3em;
-      background: linear-gradient(to right, gold, orange, red);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: bold;
-      text-align: center;
+      color: #ffcccc;
+      margin-bottom: 0.3em;
     }
 
-    h2 {
-      font-size: 1.5em;
-      color: #ffd700;
-      text-align: center;
-      margin-top: -10px;
+    .hero-text p {
+      font-size: 1.2em;
+      color: #ffffffcc;
+      margin-bottom: 1em;
+    }
+
+    .button {
+      background-color: #ff3366;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ff6699;
     }
 
     .section {
       padding: 40px 20px;
       text-align: center;
+      background-color: #2c2c2c;
     }
 
-    .bio {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    .section h2 {
+      color: #ffcccc;
+      font-size: 2em;
     }
 
-    .bio img {
-      width: 200px;
-      border-radius: 100px;
-      margin-bottom: 20px;
-      border: 3px solid #ffd700;
+    .social-links {
+      margin-top: 20px;
     }
 
-    .bio p {
-      max-width: 700px;
-      font-size: 1.1em;
-      line-height: 1.6;
-    }
-
-    .social a {
-      margin: 10px;
+    .social-links a {
+      margin: 0 10px;
+      color: #ffcccc;
+      font-size: 1.5em;
       text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      background-color: #ffd700;
-      color: #000;
-      font-weight: bold;
+      transition: color 0.3s;
     }
 
-    iframe {
-      width: 90%;
-      max-width: 700px;
-      height: 400px;
-      border: none;
-      margin-top: 30px;
+    .social-links a:hover {
+      color: #ffffff;
     }
 
     footer {
-      text-align: center;
       padding: 20px;
-      background: #000;
-      color: #aaa;
+      text-align: center;
+      background-color: #1a1a1a;
+      color: #888;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Dedé Oliveira</h1>
-    <h2>O Último Romântico</h2>
-  </header>
+  <!-- CAPA -->
+  <div class="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Minha música é verdadeira…</h1>
+      <p>…igual a nossa conexão. Me escreve, tua história também é parte da minha.</p>
+      <a class="button" href="https://wa.me/55SEUNUMEROAQUI" target="_blank">Fale comigo no WhatsApp</a>
+    </div>
+  </div>
 
-  <section class="section bio">
-    <img src="https://i.imgur.com/Y8eYUdj.jpg" alt="Dedé Oliveira">
+  <!-- SOBRE A CONEXÃO -->
+  <div class="section">
+    <h2>🎙️ Dedé Oliveira</h2>
     <p>
-      Dedé Oliveira é cantor, compositor e criador de vídeos autênticos. Depois de anos longe dos palcos, ele retornou com força total usando as redes sociais para tocar corações com suas músicas românticas. Sua história é marcada por luta, fé e paixão pela música. Com mais de 500 mil seguidores no Facebook, ele é hoje um dos nomes mais queridos do romantismo brasileiro.
+      Canto pra quem sente. Se você já chorou, amou ou sorriu com uma das minhas canções, esse espaço é seu.  
+      Me conta tua história, comenta, participa. Aqui não tem fã, tem família musical. 💖
     </p>
-  </section>
+  </div>
 
-  <section class="section social">
-    <h2>Redes Sociais</h2>
-    <a href="https://youtube.com/@dedepoplovedeol20" target="_blank">YouTube</a>
-    <a href="https://www.facebook.com/share/18N3R1AFnn/" target="_blank">Facebook</a>
-    <a href="https://www.instagram.com" target="_blank">Instagram</a>
-    <a href="https://wa.me/SEUNUMERO" target="_blank">WhatsApp</a>
-  </section>
+  <!-- REDES SOCIAIS -->
+  <div class="section">
+    <h2>Me acompanhe nas redes</h2>
+    <div class="social-links">
+      <a href="https://facebook.com/suapagina" target="_blank">📘 Facebook</a>
+      <a href="https://youtube.com/seucanal" target="_blank">📺 YouTube</a>
+      <a href="https://instagram.com/seuperfil" target="_blank">📸 Instagram</a>
+      <a href="https://tiktok.com/@seudedé" target="_blank">🎵 TikTok</a>
+    </div>
+  </div>
 
-  <section class="section">
-    <h2>Último Vídeo</h2>
-    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"></iframe>
-  </section>
-
+  <!-- RODAPÉ -->
   <footer>
-    © 2025 Dedé Oliveira - Todos os direitos reservados
+    &copy; 2025 Dedé Oliveira – Todos os direitos reservados.
   </footer>
 
 </body>
