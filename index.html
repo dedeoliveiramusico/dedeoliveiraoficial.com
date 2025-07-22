@@ -1,10 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dedé Oliveira – Música com Alma</title>
+  <title>Dedé Oliveira – O Último Romântico</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     * {
       margin: 0;
@@ -18,8 +20,8 @@
     }
 
     .hero {
-      background: url('64c28ffd85e9820f6d5375ef379a4294c8fb71895fa21b30d03125d2c9c443be1659081294820.jpg') no-repeat center center/cover;
-      height: 100vh;
+      background: url('sua-imagem.jpg') no-repeat center center/cover;
+      min-height: 100vh;
       position: relative;
       display: flex;
       flex-direction: column;
@@ -39,13 +41,14 @@
       position: relative;
       z-index: 1;
       padding: 20px;
+      max-width: 800px;
     }
 
     .content h1 {
       font-family: 'Great Vibes', cursive;
       font-size: 3em;
       margin-bottom: 10px;
-      color: #ffdddd;
+      color: #ffeaea;
     }
 
     .content p {
@@ -63,6 +66,8 @@
       font-weight: bold;
       font-size: 1em;
       transition: background-color 0.3s ease;
+      display: inline-block;
+      margin-top: 10px;
     }
 
     .button:hover {
@@ -74,15 +79,26 @@
     }
 
     .social-icons a {
-      margin: 0 15px;
+      margin: 0 10px;
       color: #fff;
-      font-size: 1.5em;
-      text-decoration: none;
+      font-size: 1.6em;
       transition: color 0.3s;
     }
 
     .social-icons a:hover {
       color: #ffd700;
+    }
+
+    .video-container {
+      margin-top: 40px;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border-radius: 12px;
+      border: none;
     }
 
     footer {
@@ -99,15 +115,22 @@
   <div class="hero">
     <div class="overlay"></div>
     <div class="content">
-      <h1>Música com alma.<br> Emoção de verdade.<br> Amor que se canta.</h1>
-      <p>Dedé Oliveira – Romântico por natureza, autêntico por escolha.</p>
+      <h1>Música com alma. Emoção de verdade. Amor que se canta.</h1>
+      <p>Dedé Oliveira – O Último Romântico</p>
+
       <a href="https://youtube.com/seucanal" class="button" target="_blank">Ouça agora</a>
 
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/fc-6jUX9AYo" 
+          title="Dedé Oliveira - Vídeo Oficial" allowfullscreen>
+        </iframe>
+      </div>
+
       <div class="social-icons">
-        <a href="https://facebook.com/suapagina" target="_blank">📘</a>
-        <a href="https://youtube.com/seucanal" target="_blank">📺</a>
-        <a href="https://instagram.com/seuperfil" target="_blank">📸</a>
-        <a href="https://tiktok.com/@seudede" target="_blank">🎵</a>
+        <a href="https://facebook.com/suapagina" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://youtube.com/seucanal" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://instagram.com/seuperfil" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://tiktok.com/@seudede" target="_blank"><i class="fab fa-tiktok"></i></a>
       </div>
     </div>
   </div>
@@ -118,4 +141,3 @@
 
 </body>
 </html>
-
