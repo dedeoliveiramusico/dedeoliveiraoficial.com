@@ -3,58 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dedé Oliveira – Conexão com os Fãs</title>
+  <title>Dedé Oliveira – Música com Alma</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
       font-family: 'Roboto', sans-serif;
-      background-color: #1a1a1a;
-      color: #fff;
     }
 
     .hero {
-      background-image: url('SUA-IMAGEM-ROMANTICA.jpg'); /* Coloque aqui a URL da imagem gerada no Leonardo */
-      background-size: cover;
-      background-position: center;
+      background: url('64c28ffd85e9820f6d5375ef379a4294c8fb71895fa21b30d03125d2c9c443be1659081294820.jpg') no-repeat center center/cover;
       height: 100vh;
       position: relative;
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
+      color: #fff;
       text-align: center;
     }
 
     .overlay {
-      background-color: rgba(0, 0, 0, 0.7);
       position: absolute;
-      top: 0; bottom: 0; left: 0; right: 0;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
     }
 
-    .hero-text {
+    .content {
       position: relative;
-      z-index: 2;
+      z-index: 1;
       padding: 20px;
     }
 
-    .hero-text h1 {
+    .content h1 {
       font-family: 'Great Vibes', cursive;
       font-size: 3em;
-      color: #ffcccc;
-      margin-bottom: 0.3em;
+      margin-bottom: 10px;
+      color: #ffdddd;
     }
 
-    .hero-text p {
+    .content p {
       font-size: 1.2em;
+      margin-bottom: 20px;
       color: #ffffffcc;
-      margin-bottom: 1em;
     }
 
     .button {
-      background-color: #ff3366;
-      color: white;
-      padding: 12px 25px;
-      border: none;
+      background-color: #ffd700;
+      color: #000;
+      padding: 12px 30px;
       border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
@@ -63,81 +66,56 @@
     }
 
     .button:hover {
-      background-color: #ff6699;
+      background-color: #ffbb00;
     }
 
-    .section {
-      padding: 40px 20px;
-      text-align: center;
-      background-color: #2c2c2c;
+    .social-icons {
+      margin-top: 30px;
     }
 
-    .section h2 {
-      color: #ffcccc;
-      font-size: 2em;
-    }
-
-    .social-links {
-      margin-top: 20px;
-    }
-
-    .social-links a {
-      margin: 0 10px;
-      color: #ffcccc;
+    .social-icons a {
+      margin: 0 15px;
+      color: #fff;
       font-size: 1.5em;
       text-decoration: none;
       transition: color 0.3s;
     }
 
-    .social-links a:hover {
-      color: #ffffff;
+    .social-icons a:hover {
+      color: #ffd700;
     }
 
     footer {
-      padding: 20px;
       text-align: center;
-      background-color: #1a1a1a;
-      color: #888;
+      padding: 20px;
+      background-color: #111;
+      color: #aaa;
       font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
-  <!-- CAPA -->
   <div class="hero">
     <div class="overlay"></div>
-    <div class="hero-text">
-      <h1>Minha música é verdadeira…</h1>
-      <p>…igual a nossa conexão. Me escreve, tua história também é parte da minha.</p>
-      <a class="button" href="https://wa.me/55SEUNUMEROAQUI" target="_blank">Fale comigo no WhatsApp</a>
+    <div class="content">
+      <h1>Música com alma.<br> Emoção de verdade.<br> Amor que se canta.</h1>
+      <p>Dedé Oliveira – Romântico por natureza, autêntico por escolha.</p>
+      <a href="https://youtube.com/seucanal" class="button" target="_blank">Ouça agora</a>
+
+      <div class="social-icons">
+        <a href="https://facebook.com/suapagina" target="_blank">📘</a>
+        <a href="https://youtube.com/seucanal" target="_blank">📺</a>
+        <a href="https://instagram.com/seuperfil" target="_blank">📸</a>
+        <a href="https://tiktok.com/@seudede" target="_blank">🎵</a>
+      </div>
     </div>
   </div>
 
-  <!-- SOBRE A CONEXÃO -->
-  <div class="section">
-    <h2>🎙️ Dedé Oliveira</h2>
-    <p>
-      Canto pra quem sente. Se você já chorou, amou ou sorriu com uma das minhas canções, esse espaço é seu.  
-      Me conta tua história, comenta, participa. Aqui não tem fã, tem família musical. 💖
-    </p>
-  </div>
-
-  <!-- REDES SOCIAIS -->
-  <div class="section">
-    <h2>Me acompanhe nas redes</h2>
-    <div class="social-links">
-      <a href="https://facebook.com/suapagina" target="_blank">📘 Facebook</a>
-      <a href="https://youtube.com/seucanal" target="_blank">📺 YouTube</a>
-      <a href="https://instagram.com/seuperfil" target="_blank">📸 Instagram</a>
-      <a href="https://tiktok.com/@seudedé" target="_blank">🎵 TikTok</a>
-    </div>
-  </div>
-
-  <!-- RODAPÉ -->
   <footer>
     &copy; 2025 Dedé Oliveira – Todos os direitos reservados.
   </footer>
 
 </body>
 </html>
+
