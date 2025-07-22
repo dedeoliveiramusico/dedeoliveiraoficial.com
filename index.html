@@ -1,57 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dedé Oliveira - O Último Romântico</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
       color: white;
-      background-image: url('https://raw.githubusercontent.com/dedeoliveiramusico/dedeoliveiraoficial.com/main/fundo.jpg');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      text-align: center;
     }
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.75);
-      min-height: 100vh;
-      padding: 40px 20px;
+    header {
+      background: url('https://i.imgur.com/Y8eYUdj.jpg') no-repeat center;
+      background-size: cover;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 5px #000;
     }
 
     h1 {
-      color: #ff4d4d;
       font-size: 3em;
-      margin-bottom: 10px;
+      background: linear-gradient(to right, gold, orange, red);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      text-align: center;
     }
 
-    p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
+    h2 {
+      font-size: 1.5em;
+      color: #ffd700;
+      text-align: center;
+      margin-top: -10px;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .bio {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .bio img {
+      width: 200px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+      border: 3px solid #ffd700;
+    }
+
+    .bio p {
+      max-width: 700px;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .social a {
+      margin: 10px;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #ffd700;
+      color: #000;
+      font-weight: bold;
     }
 
     iframe {
-      width: 100%;
-      max-width: 720px;
-      height: 405px;
+      width: 90%;
+      max-width: 700px;
+      height: 400px;
       border: none;
-      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
+
+  <header>
     <h1>Dedé Oliveira</h1>
-    <p>O Último Romântico — Assista ao clipe abaixo</p>
-    <iframe 
-      src="https://www.youtube.com/embed/fc-6jUX9AYo?si=XpJmKXu1xvzJT-lN" 
-      title="YouTube video player"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen>
-    </iframe>
-  </div>
+    <h2>O Último Romântico</h2>
+  </header>
+
+  <section class="section bio">
+    <img src="https://i.imgur.com/Y8eYUdj.jpg" alt="Dedé Oliveira">
+    <p>
+      Dedé Oliveira é cantor, compositor e criador de vídeos autênticos. Depois de anos longe dos palcos, ele retornou com força total usando as redes sociais para tocar corações com suas músicas românticas. Sua história é marcada por luta, fé e paixão pela música. Com mais de 500 mil seguidores no Facebook, ele é hoje um dos nomes mais queridos do romantismo brasileiro.
+    </p>
+  </section>
+
+  <section class="section social">
+    <h2>Redes Sociais</h2>
+    <a href="https://youtube.com/@dedepoplovedeol20" target="_blank">YouTube</a>
+    <a href="https://www.facebook.com/share/18N3R1AFnn/" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    <a href="https://wa.me/SEUNUMERO" target="_blank">WhatsApp</a>
+  </section>
+
+  <section class="section">
+    <h2>Último Vídeo</h2>
+    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"></iframe>
+  </section>
+
+  <footer>
+    © 2025 Dedé Oliveira - Todos os direitos reservados
+  </footer>
+
 </body>
 </html>
