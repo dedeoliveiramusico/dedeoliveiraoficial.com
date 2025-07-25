@@ -1,87 +1,116 @@
 
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dedé Oliveira - Músico Romântico</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dedé Oliveira - Músico Autêntico</title>
   <style>
     body {
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #f7f1f1, #fff);
+      background: #f8f8f8;
       color: #333;
     }
+
     header {
-      background: #8b0000;
+      background: #8e0000;
       color: white;
+      padding: 30px 20px;
       text-align: center;
-      padding: 40px 20px;
     }
-    header img {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border: 5px solid white;
-    }
+
     header h1 {
-      margin: 20px 0 10px;
-      font-size: 2.5em;
+      margin: 0;
+      font-size: 2.2em;
     }
-    .bio {
-      text-align: center;
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-      font-size: 1.2em;
-    }
-    .redes-sociais {
-      text-align: center;
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
       padding: 20px;
     }
-    .redes-sociais a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #8b0000;
-      font-weight: bold;
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      margin-top: 20px;
     }
-    .video {
-      text-align: center;
-      padding: 20px;
-    }
-    iframe {
-      width: 90%;
-      max-width: 560px;
-      height: 315px;
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       border-radius: 10px;
-      border: none;
     }
-    footer {
-      background: #8b0000;
+
+    .social {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .social a {
+      text-decoration: none;
       color: white;
+      background: #8e0000;
+      padding: 12px 20px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .social a:hover {
+      background: #a00000;
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
       text-align: center;
-      padding: 20px;
+      padding: 15px;
       margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .social {
+        flex-direction: column;
+        gap: 15px;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="URL_DA_SUA_FOTO_AQUI.jpg" alt="Dedé Oliveira">
     <h1>Dedé Oliveira</h1>
-    <p>Músico Romântico | Criador de Vídeos Autêntico</p>
-  </header>  <section class="bio">
-    <p>Dedé Oliveira é um artista apaixonado pela música romântica, com mais de 5 anos de história como criador de vídeos nas redes sociais. Com seu estilo autêntico e emocionante, conquistou o coração de milhares de fãs por todo o Brasil.</p>
-  </section>  <section class="redes-sociais">
-    <h2>Minhas Redes Sociais</h2>
-    <a href="https://youtube.com/@dedepoplovedeol20" target="_blank">YouTube</a>
-    <a href="https://www.facebook.com/share/19MtWA8RM7/" target="_blank">Facebook</a>
-    <a href="https://www.instagram.com/dede_oliveira_oficial" target="_blank">Instagram</a>
-  </section>  <section class="video">
-    <h2>Assista ao Vídeo em Destaque</h2>
-    <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=dedepoplovedeol20" allowfullscreen></iframe>
-  </section>  <footer>
-    <p>Obrigado por acompanhar meu trabalho. A música é o meu caminho, e você faz parte dessa história. 💖</p>
+    <p>Música Autêntica • Amor em Canções</p>
+  </header>
+
+  <div class="container">
+    <h2 style="text-align:center;">🎥 Vídeo em Destaque</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/wCJiud26q8M" 
+              title="Vídeo Dedé Oliveira" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="social">
+      <a href="https://www.facebook.com/share/19MtWA8RM7/" target="_blank">Facebook</a>
+      <a href="https://youtube.com/@dedepoplovedeol20" target="_blank">YouTube</a>
+      <a href="https://www.instagram.com/dede_oliveira_oficial" target="_blank">Instagram</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Dedé Oliveira • Todos os direitos reservados
   </footer>
+
 </body>
 </html>
